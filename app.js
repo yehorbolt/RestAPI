@@ -20,7 +20,7 @@ app.use('/users', usersRoute)
 app.use('/',mainPageRoute)
 
 // Connect to Cloud DB
-mongoose.connect(process.env.DB_CONNECTION)
+mongoose.connect('Use your url')
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "Error message: "));
